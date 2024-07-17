@@ -29,7 +29,11 @@ On Mac this folder is
 And copy paste the content of macro.bas into there.
 
 Now you should be able to use the command 
-**=CRYPTOPRICE(CryptoCurrencyCode, CurrencyCode)**
+**=CRYPTOPRICE(CryptoCurrencyCode, CurrencyCode)**  
+  
+Note, this macro function will fail to load when you open the spreadsheet and will return $0.00 for the price
+You will need to Press Ctrl-Shift-F9 to reload all cells and this will fetch the price. This is due to the python script
+provider not being available when the libreoffice macro runs at startup.
 
 ## Copyright
 (C) Michael Johnston 2024
